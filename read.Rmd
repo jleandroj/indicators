@@ -2,21 +2,52 @@
 title: "Untitled"
 author: "Leandro Jimenez"
 date: "1 de maio de 2016"
-output: pdf_document
+output: 
+  pdf_document: 
+    keep_tex: yes
 ---
+Global indicators are the objective of gapminder. This site allows us about economic and social indicators of most countries around the world. More information about gapminder click [here](https://www.gapminder.org).
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Application: 
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+In this aplication you can see your country and compare whit others about some important subjects such as income per person or alcohol comsumption.
 
-```{r}
-summary(cars)
-```
+You can choose one, two or more of out 13 indicators avaliable to watch a map and get a list with all countries. 
 
-You can also embed plots, for example:
+As well, you can see all data about your country looking for any indicator that you want to see using search. 
 
-```{r, echo=FALSE}
-plot(cars)
-```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Source code for ui.R and server.R files are available on the GitHub repo: https://github.com/jleandroj/pricegal
+
+Description of Indicators:
+
+incomeperperson: 2010 Gross Domestic Product per capita in constant 2000 US$. The inflation but not the differences in the cost of living between countries
+has been taken into account. World Bank Work Development Indicators.
+
+alcconsumption: 2008 alcohol consumption per adult (age 15+), litres Recorded and estimated average alcohol consumption, adult (15+) per capita consumption in  litres pure alcohol. WHO
+
+armedforcesrate: Armed forces personnel (% of total labor force). Work Development Indicators.
+
+breastcancerper100TH: 2002 breast cancer new cases per 100,000 female Number of new cases of breast cancer in 100,000 female residents during the certain year. ARC (International Agency for Research on Cancer).
+
+co2emissions: 2006 cumulative CO2 emission (metric tons), Total amount of CO2emission in metric tons since 1751. CDIAC (Carbon Dioxide Information Analysis Center)
+
+femaleemployrate: 2007 female employees age 15+ (% of population) Percentage of female population, age above 15, that has been employed during the given year. International Labour Organization.
+
+employrate: 2007 total employees age 15+ (% of population) Percentage of total population, age above 15, that has been employed during the given year. International Labour Organization.
+
+HIVrate: 2009 estimated HIV Prevalence % - (Ages 15-49) Estimated number of people living with HIV per 100 population of age group 15-49. UNAIDS online database.
+
+Internetuserate: 2010 Internet users (per 100 people) Internet users are people with access to the worldwide network.World Bank.
+
+lifeexpectancy: 2011 life expectancy at birth (years) The average number of years a newborn child would live if current mortality patterns were to stay the ame. 1. Human Mortality Database, 2. World Population Prospects: 3. Publications and files by history prof. James C Riley, 4. Human Lifetable Database.
+
+oilperperson: 2010 oil Consumption per capita (tonnes per year and person). BP.
+
+polityscore: 2009 Democracy score (Polity) Overall polity score from the Polity IV dataset, calculated by subtracting an autocracy score from a democracy score. The summary measure of a country's democratic and free nature. -10 is the lowest value, 10 the highest. Polity IV Project.
+
+relectricperperson: 2008 residential electricity consumption, per person (kWh) The amount of residential electricity consumption per person during the given year, counted in kilowatt-hours (kWh). International Energy Agency
+
+suicideper100TH: 2005 Suicide, age adjusted, per 100 000 Mortality due to self-inflicted injury, per 100 000 standard population, age adjusted. Combination of time series from WHO Violence and Injury Prevention (VIP) and data from WHO Global Burden of Disease 2002 and 2004.
+
+urbanrate 2008 urban population (% of total) Urban population refers to people living in urban areas as defined by national statistical offices (calculated using World Bank population estimates and urban ratios from the United Nations World Urbanization Prospects) World Bank.

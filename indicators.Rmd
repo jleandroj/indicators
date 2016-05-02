@@ -1,0 +1,42 @@
+---
+title: "indicators"
+author: "Leandro Jimenez"
+date: "2 de maio de 2016"
+output: ioslides_presentation
+runtime: shiny
+---
+
+## Course Project: Shiny Application and Reproducible Pitch
+
+This was built as part of a deliverable for the course Developing Data Products as part of the Coursera Data Science Specialization.
+
+Source code for ui.R and server.R files are available on the GitHub repo: https://github.com/jleandroj/indicators
+
+take at look in the aplications https://jleandroj.shinyapps.io/indicators/
+
+## Overview
+
+Global indicators are the objective of gapminder. This site allows us about economic and social indicators of most countries around the world. More information about gapminder click [here](https://www.gapminder.org).
+
+Application: 
+
+In this aplication you can see your country and compare whit others about some important subjects such as income per person or alcohol comsumption.
+
+you can see all data about your country looking for any indicator that you want to see using search option.
+
+More information about Description of Indicators please to go read.rmd file in https://github.com/jleandroj/indicators or about indicators in the aplication in https://jleandroj.shinyapps.io/indicators/
+
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Code and Output
+
+```{r}
+summary(cars)
+```
+
+
