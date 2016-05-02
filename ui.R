@@ -3,7 +3,7 @@ library(shiny)
 shinyUI(navbarPage("Global indicators",
   tabPanel("Main indicators",
     fluidPage(  
-      plotOutput("distPlot"),
+      plotOutput("distPlot",width = "100%",height = "400px"),
         hr(),
         fluidRow(
         column(9,
@@ -28,6 +28,6 @@ shinyUI(navbarPage("Global indicators",
                   )))
         ),
         tabPanel("About indicators",
-                 includeMarkdown("Read.Rmd")
+                 includeMarkdown("read.Rmd")
                  )
 ))

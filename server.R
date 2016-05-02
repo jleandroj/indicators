@@ -13,7 +13,9 @@ shinyServer(function(input, output) {
     
     polygons1 <- merge(polygons,gap, by="NAME")
     
-    spplot(polygons1,input$checkGroup, main=paste(input$checkGroup))
+    G<-spplot(polygons1,input$checkGroup, main=paste(input$checkGroup), lwd=.8, col="black")
+           
+    plot(G)
     })
     
     output$table <-  renderDataTable({ 
