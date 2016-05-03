@@ -2,6 +2,8 @@ name: indicators
 account: indicators
 server: shinyapps.io
 appId: 99361
-bundleId: 439911
+bundleId: 440091
 url: https://indicators.shinyapps.io/indicators/
-when: 1462218488.50463
+when: 1462235529.08968
+asMultiple: FALSE
+asStatic: FALSE

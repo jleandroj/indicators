@@ -17,7 +17,7 @@ You can choose one, two or more of out 13 indicators avaliable to watch a map an
 As well, you can see all data about your country looking for any indicator that you want to see using search. 
 
 
-Source code for ui.R and server.R files are available on the GitHub repo: https://github.com/jleandroj/pricegal
+Source code for ui.R and server.R files are available on the GitHub repo: https://github.com/jleandroj/indicators
 
 Description of Indicators:
 
