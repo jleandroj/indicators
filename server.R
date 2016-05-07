@@ -1,11 +1,13 @@
 library(shiny)
+library(rgdal)
 library(raster)
-library(XML)
-library(plyr)
-library(datasets)
-polygons <- shapefile("data/TM_WORLD_BORDERS_SIMPL-0.3.shp")
-gap<-read.csv("data/gapminder.csv",header = TRUE)
-names(gap)[1]<-paste("NAME")
+library(sp)
+library(knitr)
+
+
+polygons <- shapefile("TM_WORLD_BORDERS_SIMPL-0.3.shp")
+gap<-read.table("g.txt")
+names(gap)[1]<-"NAME"
 
 shinyServer(function(input, output) {
   
@@ -13,9 +15,8 @@ shinyServer(function(input, output) {
     
     polygons1 <- merge(polygons,gap, by="NAME")
     
-    G<-spplot(polygons1,input$checkGroup, main=paste(input$checkGroup), lwd=.8, col="black")
+    spplot(polygons1,input$checkGroup, main=paste(input$checkGroup),lwd=.8, col="black")
            
-    plot(G)
     })
     
     output$table <-  renderDataTable({ 

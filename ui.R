@@ -1,9 +1,11 @@
 library(shiny)
-# Define UI for application that draws a histogram
+library(raster)
+library(sp)
+library(knitr)
 shinyUI(navbarPage("Global indicators",
   tabPanel("Main indicators",
     fluidPage(  
-      plotOutput("distPlot",width = "100%",height = "400px"),
+      plotOutput("distPlot"),
         hr(),
         fluidRow(
         column(9,

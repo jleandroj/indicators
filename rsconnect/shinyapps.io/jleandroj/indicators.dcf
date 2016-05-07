@@ -1,9 +1,7 @@
 name: indicators
 account: jleandroj
 server: shinyapps.io
-appId: 99565
-bundleId: 439984
+appId: 100469
+bundleId: 443993
 url: https://jleandroj.shinyapps.io/indicators/
-when: 1462223698.80527
-asMultiple: FALSE
-asStatic: FALSE
+when: 1462576987.21249

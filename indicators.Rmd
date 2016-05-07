@@ -1,4 +1,10 @@
 ---
+output: 
+  html_document: 
+    keep_md: yes
+    toc: yes
+runtime: shiny
+---
 title: "indicators"
 author: "Leandro Jimenez"
 date: "2 de maio de 2016"
@@ -41,6 +47,8 @@ More information about Description of Indicators please to go read.rmd file in h
 # indicators
 
 ```{r echo=FALSE,warning=FALSE,message=FALSE}
+library(knitr)
+library(shiny)
 shinyAppDir("C:/Users/Usuario/Desktop/indicators",
   options=list(
     width="100%", height=550
@@ -56,10 +64,4 @@ You can choice the country that you want to see.
 
 Using search we can see data about each country and see the number of 13 indicators
 
-You can https://indicators.shinyapps.io/indicators/
-```
-
-
-
-
-
+You can https://jleandroj.shinyapps.io/indicators/
