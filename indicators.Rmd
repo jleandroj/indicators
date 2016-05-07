@@ -21,7 +21,7 @@ This was built as part of a deliverable for the course Developing Data Products 
 
 Source code for ui.R and server.R files are available on the GitHub repo: https://github.com/jleandroj/indicators
 
-take at look in the aplications https://indicators.shinyapps.io/indicators/
+take at look in the aplications https://jleandroj.shinyapps.io/indicators/
 
 # about indicators aplication: 
 
